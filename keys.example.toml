@@ -1,0 +1,12 @@
+# Copy this file to the config path shown by the application, then fill in both
+# 64-hex-character AES-256 keys. Do not add the completed file to Git.
+#
+# Xbox key source: find the `GTAV=` line in the 2013 Xbox 360 source post:
+# https://community.wemod.com/t/gta-v-save-block-editor-0-0-3-x360-source/2899
+#
+# PC key source: find `PC_KEY` in this public source file:
+# https://github.com/hzhreal/HTOS/blob/31fca60508251e591afe261b927d73c76a7b3503/data/crypto/rstar_crypt.py
+
+xbox_save_key = ""
+pc_save_key = ""
+

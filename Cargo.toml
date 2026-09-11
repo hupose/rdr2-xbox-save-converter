@@ -1,0 +1,28 @@
+[package]
+name = "rdr2-xbox-save-converter"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Offline GUI converter for RDR2 Xbox Connected Storage story saves"
+license = "MIT"
+repository = "https://github.com/hupose/rdr2-xbox-save-converter"
+keywords = ["rdr2", "xbox", "savegame", "converter"]
+categories = ["games", "gui"]
+
+[dependencies]
+aes = "0.8.4"
+directories = "6.0.0"
+eframe = "0.32.3"
+hex = "0.4.3"
+rfd = "0.15.4"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+sha2 = "0.10.9"
+thiserror = "2.0.17"
+toml = "0.9.8"
+zip = { version = "2.4.2", default-features = false, features = ["deflate"] }
+
+[profile.release]
+lto = "thin"
+strip = true
+
